@@ -6,6 +6,42 @@
 
 @layer base {
     body {
-        @apply 'font-montserrat';
+        @apply relative font-montserrat bg-dark;
+    }
+}
+
+@layer utilities {
+    .desktop-only {
+        @apply hidden lg:block;
+    }
+
+    .desktop-tablet {
+        @apply hidden md:block;
+    }
+
+    .mobile-only {
+        @apply block md:hidden;
+    }
+}
+
+@layer components {
+    .nav-link {
+        @apply text-base font-medium capitalize text-light
+    }
+
+    .nav-link.active {
+        @apply !font-semibold !text-lime
+    }
+
+    .btn-text {
+        @apply px-7 py-3 rounded-[10px] bg-transparent text-base font-semibold text-center text-light;
+    }
+
+    .btn-primary {
+        @apply px-7 py-3 rounded-[10px] bg-primary text-base font-semibold text-center text-dark
+    }
+
+    .card-program {
+        @apply rounded-[28px] p-6 bg-secondary flex md:flex-col gap-x-4 items-start
     }
 }

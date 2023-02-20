@@ -1,12 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Gym</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Icon Gym</title>
+
+        <link rel="stylesheet" href="/public/style/main.css">
+
+        <link rel="shortcut icon" href="/public/assets/svg/logo-white.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+
+    <body>
+        <img src="/public/assets/svg/bg_ornament.svg" class="absolute right-0 -top-7 -z-10 desktop-tablet" alt="">
+        <nav class="flex flex-col pt-4 lg:flex-row lg:items-center lg:justify-between lg:pt-10 lg:px-[50px] px-4">
+            <img src="/public/assets/svg/logo-white.svg" alt="">
+
+            <div class="flex flex-col items-center lg:flex-row gap-x-10 gap-y-4">
+                <a href="#" class="nav-link active">
+                    Home
+                </a>
+                <a href="#" class="nav-link">
+                    Programs
+                </a>
+                <a href="#" class="nav-link">
+                    Pricing
+                </a>
+                <a href="#" class="nav-link">
+                    About Us
+                </a>
+            </div>
+            <div class="flex flex-col items-center lg:flex-row gap-x-5 gap-y-4">
+                <a href="#" class="btn-text">
+                    Sign In
+                </a>
+                <a href="#" class="btn-primary">
+                    Join Now
+                </a>
+            </div>
+        </nav>
+
+        <section id="hero" class="pt-[100px] pb-[75px] container relative">
+            <div class="grid items-center gap-20 md:grid-cols-2">
+                <div class="flex flex-col">
+                    <h1 class="font-bold md:text-[64px] text-4xl md:leading-[78px] text-light">
+                        Healthy Body Goals <br class="desktop-only">
+                        <div class="text-lime">FOR EVERYONE</div>
+                    </h1>
+                    <p class="mt-4 text-base font-medium text-light leading-7 mb-[30px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nisl laoreet duis arcu tempor
+                        risus ut egestas. Aliquet dignissim aliquam turpis cras etiam aliquam diam feugiat posuere.
+                        Aenean pharetra suspendisse sapien nulla massa in.
+                    </p>
+                    <a href="#" class="flex items-center btn-primary gap-[10px] max-w-max">
+                        <img src="/public/assets/svg/ic-play.svg" alt="">
+                        Video Preview
+                    </a>
+
+                </div>
+                <img src="/public/assets/images/hero-image.webp"
+                    class="object-cover max-w-[483px] w-full h-auto mx-auto" alt="">
+            </div>
+        </section>
+
+        <section id="statistics"
+            class="py-[50px] flex justify-between md:justify-center flex-row items-center md:gap-x-20 container">
+            <div class="flex flex-col items-center gap-1">
+                <div class="text-primary font-bold text-2xl md:text-[40px] md:leading-[49px] text-center">
+                    24
+                </div>
+                <p class="text-sm font-normal text-center md:text-lg text-light">
+                    Expert Mentors
+                </p>
+            </div>
+            <div class="flex flex-col min-h-[73px] opacity-10 border border-grey rounded-sm"></div>
+            <div class="flex flex-col items-center gap-1">
+                <div class="text-primary font-bold text-2xl md:text-[40px] md:leading-[49px] text-center">
+                    40
+                </div>
+                <p class="text-sm font-normal text-center md:text-lg text-light">
+                    Programs
+                </p>
+            </div>
+            <div class="flex flex-col min-h-[73px] opacity-10 border border-grey rounded-sm"></div>
+            <div class="flex flex-col items-center gap-1">
+                <div class="text-primary font-bold text-2xl md:text-[40px] md:leading-[49px] text-center">
+                    2018
+                </div>
+                <p class="text-sm font-normal text-center md:text-lg text-light">
+                    Super Members
+                </p>
+            </div>
+        </section>
+
+        <section id="programs" class="pt-[100px] pb-[150px] container relative">
+            <img src="/public/assets/svg/green-blur-radial.svg"
+                class="absolute top-[56px] left-[-35px] -z-10 w-[340px] h-auto" alt="">
+            <div class="flex flex-wrap justify-between items-center gap-6 mb-[60px]">
+                <header>
+                    <p class="mb-4 text-lg font-semibold uppercase text-lime">
+                        Our Services
+                    </p>
+                    <h3 class="text-4xl font-bold leading-tight text-light">
+                        Programs you <br class="desktop-only">
+                        get from us
+                    </h3>
+                </header>
+                <p class="text-base font-medium leading-7 text-light max-w-[560px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nisl laoreet duis arcu tempor risus
+                    ut egestas. Aliquet dignissim aliquam turpis cras etiam aliquam diam feugiat posuere. Aenean
+                    pharetra suspendisse sapien nulla massa in.
+                </p>
+            </div>
+
+            <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2">
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_heart-rate.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Balancing Physics
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet mattis.
+                            Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_yoga.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Comfortable Yoga
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet mattis.
+                            Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_zumba.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Zumba Class
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet mattis.
+                            Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_pull-person.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Cardio Strength
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet
+                            mattis. Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_dumbell-person.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Beginner Training
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet
+                            mattis. Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-program">
+                    <img src="/public/assets/svg/ic_muscle.svg" class="w-[70px]" alt="">
+                    <div class="md:mt-10">
+                        <h5 class="mb-3 text-base font-semibold capitalize md:text-xl text-light">
+                            Weight Gain
+                        </h5>
+                        <p class="text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim sed urna, imperdiet
+                            mattis. Pharetra dignissim tristique blandit massa luctus al.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="whyUs" class="mx-auto relative pb-[75px]">
+            <div class="grid items-center md:grid-cols-2 gap-x-5">
+                <div class="relative">
+                    <img src="/public/assets/images/work-out-illustration.webp" class="w-full desktop-only" alt="">
+                </div>
+                <div class="px-4">
+                    <header>
+                        <p class="mb-4 text-lg font-semibold uppercase text-lime">
+                            give our best
+                        </p>
+                        <h3 class="text-4xl font-bold leading-tight text-light">
+                            Why you <br class="desktop-only">
+                            should join with us
+                        </h3>
+                    </header>
+                    <p class="mt-[30px] mb-[50px] text-base font-medium leading-7 text-light max-w-[440px]">
+                        We provide you the best trainer and utilities you can get in every Gyms and friendly pricing
+                    </p>
+
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Mentoring by Professional Trainer
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                1 free program for new members
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                100+ gym equipment
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                International Standard Gym Equipment
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free flow bar & cafe by IconGym
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Basketball area
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Programs based on what you need
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Many more exciting features
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="relative py-[75px]">
+            <img src="/public/assets/svg/pricing_ornament.svg" class="absolute top-0 -left-40 -z-10" alt="">
+            <header class="text-center mb-[50px] container">
+                <p class="mb-4 text-lg font-semibold uppercase text-lime">
+                    pricing
+                </p>
+                <h4 class="text-4xl font-bold leading-tight text-light">
+                    Membership Programs
+                </h4>
+            </header>
+
+            <div class="container grid gap-6 lg:grid-cols-4 md:grid-cols-2">
+                <!-- Card -->
+                <div class="p-[24px] rounded-[28px] bg-secondary flex flex-col gap-[30px] h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="flex flex-col gap-1">
+                            <div class="font-bold text-light">
+                                <sup class="mr-1 text-sm">Rp</sup>
+                                <!-- <span class="text-2xl line-through decoration-[#F43E54] animate-pulse mr-3">
+                                    350.000
+                                </span> -->
+                                <span class="text-2xl">
+                                    350.000
+                                </span>
+                            </div>
+                            <!-- <p class="text-sm text-light">Saves Rp 105.000</p> -->
+                        </div>
+                        <div class="px-3 py-[6px] bg-[#747474] bg-opacity-10 rounded-full w-max">
+                            <span class="text-sm font-semibold text-lime">
+                                1 Month(s)
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free snacks
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Professional Trainer
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Locker Room
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free Parking Lot
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Konsultasi Program Fitness
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-auto btn-primary">
+                        Join Now
+                    </a>
+                </div>
+                <!-- Card -->
+                <div class="p-[24px] rounded-[28px] bg-secondary flex flex-col gap-[30px] h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="flex flex-col gap-1">
+                            <div class="font-bold text-light">
+                                <sup class="mr-1 text-sm">Rp</sup>
+                                <!-- <span class="text-2xl line-through decoration-[#F43E54] animate-pulse mr-3">
+                                    350.000
+                                </span> -->
+                                <span class="text-2xl">
+                                    945.000
+                                </span>
+                            </div>
+                            <p class="text-sm text-light">Saves Rp 105.000</p>
+                        </div>
+                        <div class="px-3 py-[6px] bg-[#747474] bg-opacity-10 rounded-full w-max">
+                            <span class="text-sm font-semibold text-lime">
+                                3 Month(s)
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free snacks
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Professional Trainer
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Locker Room
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free Parking Lot
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Konsultasi Program Fitness
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-auto btn-primary">
+                        Join Now
+                    </a>
+                </div>
+                <!-- Card -->
+                <div class="p-[24px] rounded-[28px] bg-secondary flex flex-col gap-[30px] h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="flex flex-col gap-1">
+                            <div class="font-bold text-light">
+                                <sup class="mr-1 text-sm">Rp</sup>
+                                <!-- <span class="text-2xl line-through decoration-[#F43E54] animate-pulse mr-3">
+                                    350.000
+                                </span> -->
+                                <span class="text-2xl">
+                                    1.770.000
+                                </span>
+                            </div>
+                            <p class="text-sm text-light">Saves Rp 330.000</p>
+                        </div>
+                        <div class="px-3 py-[6px] bg-[#747474] bg-opacity-10 rounded-full w-max">
+                            <span class="text-sm font-semibold text-lime">
+                                6 Month(s)
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free snacks
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Professional Trainer
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Locker Room
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free Parking Lot
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Konsultasi Program Fitness
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-auto btn-primary">
+                        Join Now
+                    </a>
+                </div>
+                <!-- Card -->
+                <div class="p-[24px] rounded-[28px] bg-secondary flex flex-col gap-[30px] h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="flex flex-col gap-1">
+                            <div class="font-bold text-light">
+                                <sup class="mr-1 text-sm">Rp</sup>
+                                <!-- <span class="text-2xl line-through decoration-[#F43E54] animate-pulse mr-3">
+                                    350.000
+                                </span> -->
+                                <span class="text-2xl">
+                                    3.000.000
+                                </span>
+                            </div>
+                            <p class="text-sm text-light">Saves Rp 1.200.000</p>
+                        </div>
+                        <div class="px-3 py-[6px] bg-[#747474] bg-opacity-10 rounded-full w-max">
+                            <span class="text-sm font-semibold text-lime">
+                                12 Month(s)
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free snacks
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Professional Trainer
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Locker Room
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Free Parking Lot
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <img src="/public/assets/svg/ic_check.svg" class="w-6" alt="">
+                            <p class="text-base font-medium text-light">
+                                Konsultasi Program Fitness
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-auto btn-primary">
+                        Join Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="trainers" class="relative py-[75px] overflow-hidden">
+            <header class="container relative text-center mb-[50px]">
+                <p
+                    class="absolute left-0 right-0 mb-4 text-lg font-semibold uppercase -translate-y-1/2 text-lime top-1/2">
+                    MEET
+                </p>
+                <h3 class="text-3xl md:text-6xl font-semibold uppercase text-[#747474] opacity-10">
+                    the trainers
+                </h3>
+            </header>
+            <div id="trainerCards" class="px-4">
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-01.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Druig
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            Cardio Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-02.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Makkari
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            Zumba Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-03.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Sersi
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            Yoga Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-04.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Gilgamesh
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            Weight-lift Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-05.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Thena
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            KickBoxing Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center gap-4 mr-6">
+                    <img src="/public/assets/images/trainers-06.webp"
+                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                    <div class="text-center">
+                        <div class="text-lg font-semibold capitalize text-light">
+                            Ikaris
+                        </div>
+                        <p class="text-sm font-medium capitalize text-grey">
+                            Weight-lift Trainer
+                        </p>
+                        <a href="#" class="absolute inset-0"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(() => {
+                $('#trainerCards').flickity({
+                    cellAlign: 'left',
+                    contain: true,
+                    prevNextButtons: false,
+                    pageDots: false,
+                    groupCells: 2
+                });
+                $('.flickity-viewport').css('overflow', 'visible')
+            })
+        </script>
+    </body>
+
 </html>

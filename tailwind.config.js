@@ -9,8 +9,7 @@ module.exports = {
 			center: true,
 			padding: {
 				DEFAULT: "1rem",
-				lg: "75px",
-				xl: "100px",
+				lg: "50px",
 			},
 		},
 		extend: {
@@ -20,7 +19,7 @@ module.exports = {
 				light: "#E9EDF5",
 				lime: "#9BED34",
 				dark: "#1F1F1F",
-        grey: "#959595"
+				grey: "#959595"
 			},
 		},
 	},
