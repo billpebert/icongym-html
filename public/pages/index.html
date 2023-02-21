@@ -14,11 +14,19 @@
     </head>
 
     <body>
-        <img src="/public/assets/svg/bg_ornament.svg" class="absolute right-0 -top-7 -z-10 desktop-tablet" alt="">
-        <nav class="flex flex-col pt-4 lg:flex-row lg:items-center lg:justify-between lg:pt-10 lg:px-[50px] px-4">
-            <img src="/public/assets/svg/logo-white.svg" alt="">
+        <img src="/public/assets/svg/bg_ornament.svg" class="absolute right-0 -top-7 -z-10 desktop-only" alt="">
+        <nav class="flex flex-col pt-4 lg:flex-row lg:items-center lg:pt-10 lg:px-[50px] px-4">
+            <div class="flex items-center justify-between mb-6 lg:mb-0">
+                <a href="#">
+                    <img src="/public/assets/svg/logo-white.svg" class="max-h-[20px] w-full" alt="">
+                </a>
 
-            <div class="flex flex-col items-center lg:flex-row gap-x-10 gap-y-4">
+                <a href="javascript:void(0)" class="w-6 h-6 mobile-tablet" id="navbarToggler">
+                    <img src="/public/assets/svg/ic-hamburger.svg" alt="">
+                </a>
+            </div>
+
+            <div class="flex flex-col lg:items-center lg:flex-row gap-x-10 gap-y-4 mobileMenu desktop-only">
                 <a href="#" class="nav-link active">
                     Home
                 </a>
@@ -32,7 +40,7 @@
                     About Us
                 </a>
             </div>
-            <div class="flex flex-col items-center lg:flex-row gap-x-5 gap-y-4">
+            <div class="flex flex-col lg:items-center lg:flex-row gap-x-5 gap-y-4 mobileMenu desktop-only">
                 <a href="#" class="btn-text">
                     Sign In
                 </a>
@@ -43,7 +51,7 @@
         </nav>
 
         <section id="hero" class="pt-[100px] pb-[75px] container relative">
-            <div class="grid items-center gap-20 md:grid-cols-2">
+            <div class="grid items-center gap-20 lg:grid-cols-2">
                 <div class="flex flex-col">
                     <h1 class="font-bold md:text-[64px] text-4xl md:leading-[78px] text-light">
                         Healthy Body Goals <br class="desktop-only">
@@ -193,8 +201,8 @@
 
         <section id="whyUs" class="mx-auto relative pb-[75px]">
             <div class="grid items-center md:grid-cols-2 gap-x-5">
-                <div class="relative">
-                    <img src="/public/assets/images/work-out-illustration.webp" class="w-full desktop-only" alt="">
+                <div class="relative desktop-tablet">
+                    <img src="/public/assets/images/work-out-illustration.webp" class="w-full" alt="">
                 </div>
                 <div class="px-4">
                     <header>
@@ -520,7 +528,8 @@
             <div id="trainerCards" class="px-4">
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-01.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Druig
@@ -533,7 +542,8 @@
                 </div>
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-02.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Makkari
@@ -546,7 +556,8 @@
                 </div>
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-03.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Sersi
@@ -559,7 +570,8 @@
                 </div>
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-04.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Gilgamesh
@@ -572,7 +584,8 @@
                 </div>
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-05.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Thena
@@ -585,7 +598,8 @@
                 </div>
                 <div class="relative flex flex-col items-center gap-4 mr-6">
                     <img src="/public/assets/images/trainers-06.webp"
-                        class="object-cover rounded-[28px] w-[260px] h-[350px]" alt="">
+                        class="object-cover rounded-2xl md:rounded-[28px] w-full md:w-[260px] h-full md:max-h-[350px] max-h-[210px]"
+                        alt="">
                     <div class="text-center">
                         <div class="text-lg font-semibold capitalize text-light">
                             Ikaris
@@ -599,11 +613,90 @@
             </div>
         </section>
 
+        <footer class="bg-secondary py-[100px] relative">
+            <img src="/public/assets/svg/footer-ribbon.svg" class="absolute top-0 right-0" alt="">
+            <div class="container">
+                <div class="grid justify-between md:grid-cols-4 lg:grid-cols-5 gap-y-8">
+                    <div class="max-w-[320px] w-full">
+                        <a href="/">
+                            <img src="/public/assets/svg/logo-green.svg" class="max-h-5" alt="">
+                        </a>
+                        <p class="mt-6 text-base text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis dolor elementum et.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4 md:mx-auto max-w-max">
+                        <h6 class="mb-1 text-base font-semibold text-light">About</h6>
+                        <a href="#" class="text-base text-light hover:underline">
+                            About Us
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Instagram
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            TikTok
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Twitter
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-4 md:mx-auto max-w-max">
+                        <h6 class="mb-1 text-base font-semibold text-light">Support</h6>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Customer Service
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            News & Blogs
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Equipments
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-4 md:mx-auto max-w-max">
+                        <h6 class="mb-1 text-base font-semibold text-light">Community</h6>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Trainers Profile
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            News & Blogs
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Join Us
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            Partnership
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-4 md:mx-auto max-w-max">
+                        <h6 class="mb-1 text-base font-semibold text-light">Office</h6>
+                        <a href="#" class="text-base text-light hover:underline">
+                            +62 811432 122
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            icongym@id.com
+                        </a>
+                        <a href="#" class="text-base text-light hover:underline">
+                            8548 Jonas Street, Dachburgh, <br class="desktop-only"> Pennsylvania, United States
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript">
             $(() => {
+                $('#navbarToggler').on('click', () => {
+                    $('.mobileMenu').toggleClass('desktop-only')
+                })
+
                 $('#trainerCards').flickity({
                     cellAlign: 'left',
                     contain: true,

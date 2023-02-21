@@ -19,6 +19,10 @@
         @apply hidden md:block;
     }
 
+    .mobile-tablet {
+        @apply block lg:hidden;
+    }
+
     .mobile-only {
         @apply block md:hidden;
     }
