@@ -15,7 +15,7 @@
 
     <body>
         <img src="/public/assets/svg/bg_ornament.svg" class="absolute right-0 -top-7 -z-10 desktop-only" alt="">
-        <nav class="flex flex-col pt-4 lg:flex-row lg:items-center lg:pt-10 lg:px-[50px] px-4">
+        <nav class="flex flex-col pt-4 lg:flex-row lg:items-center lg:justify-between lg:pt-10 lg:px-[50px] px-4">
             <div class="flex items-center justify-between mb-6 lg:mb-0">
                 <a href="#">
                     <img src="/public/assets/svg/logo-white.svg" class="max-h-[20px] w-full" alt="">
@@ -26,34 +26,39 @@
                 </a>
             </div>
 
-            <div class="flex flex-col lg:items-center lg:flex-row gap-x-10 gap-y-4 mobileMenu desktop-only">
-                <a href="#" class="nav-link active">
-                    Home
-                </a>
-                <a href="#" class="nav-link">
-                    Programs
-                </a>
-                <a href="#" class="nav-link">
-                    Pricing
-                </a>
-                <a href="#" class="nav-link">
-                    About Us
-                </a>
+            <div class="hidden w-full lg:block" id="navigationMenu">
+                <div class="flex flex-col justify-between w-full gap-4 lg:mx-auto lg:flex-row lg:items-center">
+                    <div class="flex flex-col lg:mx-auto lg:items-center lg:flex-row gap-x-10 gap-y-4">
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                        <a href="#" class="nav-link">
+                            Programs
+                        </a>
+                        <a href="#" class="nav-link">
+                            Pricing
+                        </a>
+                        <a href="#" class="nav-link">
+                            About Us
+                        </a>
+                    </div>
+                    <div class="flex flex-col lg:items-center lg:flex-row gap-x-5 gap-y-4">
+                        <a href="#" class="btn-text">
+                            Sign In
+                        </a>
+                        <a href="#" class="btn-primary">
+                            Join Now
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col lg:items-center lg:flex-row gap-x-5 gap-y-4 mobileMenu desktop-only">
-                <a href="#" class="btn-text">
-                    Sign In
-                </a>
-                <a href="#" class="btn-primary">
-                    Join Now
-                </a>
-            </div>
+
         </nav>
 
         <section id="hero" class="pt-[100px] pb-[75px] container relative">
             <div class="grid items-center gap-20 lg:grid-cols-2">
                 <div class="flex flex-col">
-                    <h1 class="font-bold md:text-[64px] text-4xl md:leading-[78px] text-light">
+                    <h1 class="font-bold md:text-[64px] text-4xl leading-tight md:leading-[78px] text-light">
                         Healthy Body Goals <br class="desktop-only">
                         <div class="text-lime">FOR EVERYONE</div>
                     </h1>
@@ -694,7 +699,9 @@
         <script type="text/javascript">
             $(() => {
                 $('#navbarToggler').on('click', () => {
-                    $('.mobileMenu').toggleClass('desktop-only')
+                    $('#navigationMenu').animate({
+                        height: "toggle",
+                    });
                 })
 
                 $('#trainerCards').flickity({
