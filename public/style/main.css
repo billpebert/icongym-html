@@ -841,6 +841,10 @@ body{
   margin-top: auto;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2894,5 +2898,15 @@ body{
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
       paint-order: markers;
     }
+  }
+}
+
+@media (min-width: 1024px){
+  .min-\[1024px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .min-\[1024px\]\:flex-col-reverse{
+    flex-direction: column-reverse;
   }
 }
